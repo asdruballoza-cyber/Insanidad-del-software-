@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registro - Insanidad del Software</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+:root {
+  --bg: #0f1724;
+  --accent: #d4af37;
+  --text: #f0f4ff;
+  --muted: #9ba3b8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+header {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 { color: var(--accent); margin: 0; }
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+nav a:hover { color: var(--accent); }
+main { padding: 40px; max-width: 900px; margin: auto; }
+button, .btn {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+button:hover, .btn:hover { opacity: 0.8; }
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+</style>
+
+</head><body>
+
+<header>
+  <h1>Insanidad del Software</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="imagenes.html">Imágenes</a>
+    <a href="datos.html">Datos</a>
+    <a href="registro.html">Registro</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Registro de usuario</h2>
+  <form onsubmit="event.preventDefault(); alert('✅ Listo, ya estás registrado');" style="display:grid;gap:10px;max-width:400px;">
+    <input type="text" placeholder="Nombre" required style="padding:10px;border-radius:6px;border:none;">
+    <input type="email" placeholder="Correo electrónico" required style="padding:10px;border-radius:6px;border:none;">
+    <input type="password" placeholder="Contraseña" required style="padding:10px;border-radius:6px;border:none;">
+    <button type="submit">Enviar</button>
+  </form>
+</main>
+<footer>© 2025 Insanidad del Software — Proyecto escolar</footer>
+</body></html>
